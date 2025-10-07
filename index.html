@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit | CyberSec Portfolio | Hacker unkn0wn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glitch-overlay"></div>
+    
+    <header>
+        <nav>
+            <!-- Navbar -->
+            <div class="logo desktop-logo">
+                <span class="bracket">[</span>
+                <span class="hack-text">Rohit Mishra</span>
+                <span class="bracket">]</span>
+            </div>
+            <div class="nav-mobile-row">
+                <div class="logo">
+                    <span class="bracket">[</span>
+                    <span class="hack-text">Rohit Mishra</span>
+                    <span class="bracket">]</span>
+                </div>
+                <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="glitch-effect">HOME</a></li>
+                <li><a href="#about" class="glitch-effect">ABOUT</a></li>
+                <li><a href="#skills" class="glitch-effect">SKILLS</a></li>
+                <li><a href="#projects" class="glitch-effect">PROJECTS</a></li>
+                <li><a href="#contact" class="glitch-effect">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="matrix-rain" id="matrix-canvas"></div>
+            
+            <div class="hero-container">
+                <div class="hero-left">
+                    <div class="glitch-window">
+                        <div class="glitch-text">
+                            <span class="line">System Status: Active</span>
+                            <span class="line">Security Level: Maximum</span>
+                            <span class="line">Initializing Protocols...</span>
+                            <span class="line blink">_</span>
+                        </div>
+                    </div>
+                    <div class="typing-container" style="margin:1.5em 0 2em 0;">
+                        <span class="typed-text"></span>
+                        <span class="cursor">&nbsp;</span>
+                    </div>
+                    <div class="hero-stats" style="margin-bottom:2em;">
+                        <div class="stat" style="margin-right:2em;">
+                            <div class="stat-circle">
+                                <canvas id="successRateChart" width="100" height="100" style="display:block;margin:0 auto;"></canvas>
+                                <div class="stat-number" data-target="90" id="successRateValue">90</div>
+                            </div>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                    <div class="cta-container">
+                        <a href="#projects" class="cta-button primary">
+                            <span class="button-text">View Arsenal</span>
+                            <span class="button-glitch"></span>
+                            <span class="button-label">Explore My Work</span>
+                        </a>
+                        <a href="#contact" class="cta-button secondary">
+                            <span class="button-text">Initialize Contact</span>
+                        </a>
+                        <a href="Rohit_Mishra.pdf" class="cta-button primary" download>
+                            <span class="button-text">Download CV</span>
+                            <span class="button-glitch"></span>
+                            <span class="button-label">Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="hero-image-container" style="margin-bottom:2em;">
+                        <img src="my image.webp" alt="Rohit Mishra" class="hero-image" style="max-width: 320px; width: 100%; border-radius: 16px; box-shadow: 0 0 32px #00e0fc55, 0 0 0 4px #181818; margin: 0 auto 2em auto; display: block;" />
+                    </div>
+                    <div class="cyber-sphere">
+                        <div class="sphere-container">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                            <div class="core"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span class="scroll-text">Scroll to Explore</span>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title" data-text="About">About</h2>
+            <div class="section-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Elite cybersecurity specialist with a passion for uncovering vulnerabilities and strengthening digital defenses. Specializing in penetration testing, security research, and ethical hacking.</p>
+                        <div class="skill-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>Penetration Testing</h3>
+                                <p>Advanced penetration testing and vulnerability assessment for web, network, and cloud environments.</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Exploit Development & Automation</h3>
+                                <p>Custom exploit development, security automation, and tool creation using Python and industry frameworks.</p>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h3>Security Research</h3>
+                                <p>Active security researcher with expertise in vulnerability discovery, threat analysis, and reporting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="code-buttons">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="code-title">profile.java</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code>
+class SecuritySpecialist {
+    private:
+        vector<string> skills;
+        int experience;
+        bool available;
+    
+    public:
+        SecuritySpecialist() {
+            skills = {
+                "Penetration Testing",
+                "Vulnerability Assessment",
+                "Exploit Development",
+                "Security Research"
+            };
+            experience = 5;
+            available = true;
+        }
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title" data-text="Skills">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Attack Vectors</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Web Application Security</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-line"><span data-percent="95"></span></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Network Security</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-line"><span data-percent="90"></span></div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Vulnerability Assessment </span>
+                                <span>92%</span>
+                            </div>
+                            <div class="progress-line"><span data-percent="92"></span></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item" data-tech="Python">
+                            <div class="tech-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Python</h4>
+                                <div class="tech-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-item" data-tech="Kali Linux">
+                            <div class="tech-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Kali Linux</h4>
+                                <div class="tech-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech-item" data-tech="Metasploit">
+                            <div class="tech-icon">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div class="tech-info">
+                                <h4>Metasploit</h4>
+                                <div class="tech-level">
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot active"></span>
+                                    <span class="level-dot"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hacker Activity Graph: Professional Terminal Block -->
+                <div class="terminal-graph-block" style="background: #101018; border: 1.5px solid #23233a; border-radius: 8px; box-shadow: 0 0 24px 0 #00e0fc33; padding: 1.5rem 1.5rem; font-family: 'Share Tech Mono', monospace; color: #00e0fc; font-size: 1.08rem; position: relative; overflow-x: auto; margin-top:2.5em; max-width:600px; margin-left:auto; margin-right:auto;">
+                    <div style="color:#ff00ea; font-size:1rem; opacity:0.7; margin-bottom:0.5em;">┌─[ Hacker Activity Monitor ]</div>
+                    <pre id="hackerGraph" style="margin:0; background:none; border:none; color:#00e0fc; font-family:'Share Tech Mono',monospace; font-size:1.08rem;">[ Loading... ]</pre>
+                    <div style="color:#ff00ea; font-size:1rem; opacity:0.7; margin-top:0.5em;">└─$</div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title" data-text="Projects">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Bug Bounty Reconnaissance Tool</h3>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Security</span>
+                                <span>Reconnaissance</span>
+                            </div>
+                        </div>
+                        <p>A comprehensive Python tool for authorized security testing and bug bounty research. Performs reconnaissance and vulnerability analysis while providing manual testing guidance for security researchers.</p>
+                        <ul style="margin-bottom:1em;">
+                            <li>Subdomain Discovery (crt.sh, DNS, APIs)</li>
+                            <li>Port Scanning & Service Detection</li>
+                            <li>Technology Stack & CMS Detection</li>
+                            <li>Directory Discovery & Status Analysis</li>
+                            <li>SSL/TLS Analysis</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Manual Testing Guidance & PoC Templates</li>
+                        </ul>
+                        <a href="https://github.com/mrohitmishra/Reconnaissance-Tool" class="project-link" target="_blank" rel="noopener">View on GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Telegram Fake Channel Reporter Tool</h3>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Telegram</span>
+                                <span>Automation</span>
+                            </div>
+                        </div>
+                        <p>A Python-based tool designed to report Telegram groups and channels engaged in unauthorized or harmful activities. Leverages Telethon for Telegram API and PrettyTable for formatted outputs.</p>
+                        <ul style="margin-bottom:1em;">
+                            <li>Automated Reporting of suspicious groups/channels</li>
+                            <li>Telethon Integration for Telegram API automation</li>
+                            <li>PrettyTable for clear, organized data display</li>
+                            <li>User-friendly configuration and usage</li>
+                        </ul>
+                        <a href="https://github.com/mrohitmishra/Telegram-Reporter-Tool" class="project-link" target="_blank" rel="noopener">View on GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="project-overlay"></div>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2em;">
+                <a href="https://github.com/mrohitmishra" target="_blank" rel="noopener" style="color:#00e0fc; font-family:'Share Tech Mono',monospace; font-size:1.1em; text-decoration:underline;">
+                    For all my Projects, look at my GitHub <i class="fab fa-github"></i>
+                </a>
+            </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title" data-text="Contact">Contact</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Secure Communication</h3>
+                        </div>
+                        <p>All communications are end-to-end encrypted using military-grade encryption.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="mailto:mrohit.cyber@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>Encrypted Email</span>
+                        </a>
+                        <a href="tel:+918808855884" class="contact-method">
+                            <i class="fab fa-telegram"></i>
+                            <span>Secure Chat</span>
+                        </a>
+                        <a href="https://github.com/mrohitmishra" class="contact-method" target="_blank" rel="noopener">
+                            <i class="fas fa-key"></i>
+                            <span>PGP Key</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-container">
+                        <div class="form-tagline" style="margin-bottom: 1em; color: #00ffc8; font-family: 'Share Tech Mono', monospace; text-align: center;">
+                            All transmissions are encrypted. Your secrets are safe.
+                        </div>
+                        <div id="form-feedback" style="display:none; text-align:center; color:#00ffc8; margin-bottom:1em; font-family: 'Share Tech Mono', monospace;"></div>
+                                                <!-- Modal for feedback -->
+                                                <div id="form-modal" class="modal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
+                                                    <div style="background:#181818; color:#00ffc8; padding:2em 3em; border-radius:10px; box-shadow:0 0 20px #00ffc8; text-align:center; font-family:'Share Tech Mono', monospace;">
+                                                        <span style="font-size:1.5em;">Message transmitted successfully!</span><br><br>
+                                                        <button onclick="document.getElementById('form-modal').style.display='none'" style="margin-top:1em; background:#00ffc8; color:#181818; border:none; padding:0.5em 2em; border-radius:5px; font-size:1em; cursor:pointer;">OK</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-header">
+                            <div class="form-title">New Message</div>
+                            <div class="encryption-status">
+                                <i class="fas fa-lock"></i>
+                                <span>End-to-End Encrypted</span>
+                            </div>
+                        </div>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Codename</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Secure Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Encrypted Message</label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                            <button type="submit" class="submit-btn" id="transmit-btn">
+                                <span class="btn-text">Transmit Message</span>
+                                <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/mrohitmishra" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/mrohitmishra" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">&copy; 2025 | Secured with <span class="heart">❤</span> by Rohit Mishra</p>
+    </footer>
+
+    <script src="script.js"></script>
+        <script>
+        // Hamburger menu toggle for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+            if (!menuToggle || !navLinks) return;
+            menuToggle.addEventListener('click', function() {
+                const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', !expanded);
+                navLinks.classList.toggle('open');
+            });
+            // Close menu on link click (mobile)
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 900) {
+                        navLinks.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+        });
+        </script>
+        <script>
+        // Hacker-style animated ASCII bar graph
+        document.addEventListener('DOMContentLoaded', function() {
+            const graphElem = document.getElementById('hackerGraph');
+            if (!graphElem) return;
+            const labels = ['Exploits', 'Recon', 'Bypass', 'Shells', 'Escalation', 'Persistence'];
+            const max = 20;
+            let frame = 0;
+            function randomBar(val) {
+                return '█'.repeat(val) + ' '.repeat(max-val);
+            }
+            function renderGraph() {
+                let out = '';
+                for (let i = 0; i < labels.length; ++i) {
+                    // Animate with a little randomness for "hacker" feel
+                    let v = Math.floor(Math.abs(Math.sin(frame/7 + i) * max * 0.7 + Math.random()*max*0.3));
+                    if (v < 2) v = 2;
+                    out += `${labels[i].padEnd(12)}|${randomBar(v)}|\n`;
+                }
+                graphElem.textContent = out;
+                frame++;
+            }
+            setInterval(renderGraph, 400);
+            renderGraph();
+        });
+        </script>
+        <!-- Chart.js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+        // Success Rate Doughnut Chart
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.Chart) {
+                // Success Rate (Doughnut)
+                const ctx1 = document.getElementById('successRateChart').getContext('2d');
+                new Chart(ctx1, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Success', 'Remaining'],
+                        datasets: [{
+                            data: [90, 10],
+                            backgroundColor: ['#00e0fc', '#23233a'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        cutout: '75%',
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: { enabled: false }
+                        }
+                    }
+                });
+                // Core Skills (Radar)
+                const ctx2 = document.getElementById('coreSkillsChart').getContext('2d');
+                new Chart(ctx2, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Web Security', 'Network', 'Vulnerability Assessment', 'Python', 'Kali Linux', 'Metasploit'],
+                        datasets: [{
+                            label: 'Skill Level',
+                            data: [95, 90, 92, 100, 100, 80],
+                            backgroundColor: 'rgba(0,224,252,0.2)',
+                            borderColor: '#00e0fc',
+                            pointBackgroundColor: '#ff00ea',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            r: {
+                                angleLines: { color: '#23233a' },
+                                grid: { color: '#23233a' },
+                                pointLabels: { color: getComputedStyle(document.body).getPropertyValue('--text-color') || '#e0e0e0', font: { size: 14 } },
+                                min: 0,
+                                max: 100,
+                                ticks: { color: getComputedStyle(document.body).getPropertyValue('--text-color') || '#e0e0e0', stepSize: 20 }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: { enabled: true }
+                        }
+                    }
+                });
+            }
+        });
+        </script>
+</body>
+</html>
